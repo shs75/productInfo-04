@@ -1,0 +1,15 @@
+@font-face {
+    font-family: IranYekan;
+    src: url(./fonts/iranyekanwebregular.ttf);
+  }
+  body{
+    direction: rtl;
+    font-family: IranYekan;
+  }
+  :root {
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
