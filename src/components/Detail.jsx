@@ -9,6 +9,7 @@ const Detail = ({data, getProductById}) => {
     <div onClick={clickHandler} className={styles.dv_product_button}>
         <span className={styles.dv_product_name}>{data.name}</span>
         <img className={styles.dv_product_image} src={data.img} alt='{data.name}' />
+        {/* <span>{data.images[0]}</span> */}
     </div>
   )
 }

@@ -1,19 +1,19 @@
 @import 'mixins';
-.dv_main_content {
+.main {
   @include mixin-main();
   @include mixin-flex();
   @include mixin-margin();
-  width: 90%;
+  width: 100%;
   justify-content: center;
-  box-shadow: 1px 1px 5px 2px #e1e1e1;
+  box-shadow: 1px 1px 5px 2px #807b7b;
 }
-.dv_buttons {
+.Detail {
   @include mixin-flex();
   @include mixin-margin();
   flex-basis: 30%;
   flex-direction: column;
-  min-width: 270px;
+  min-width: 300px;
 }
-.dv_panels {
+.Master {
   flex-basis: 70%;
 }
