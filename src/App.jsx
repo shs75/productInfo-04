@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Detail from './components/Detail'
+import Detail from './components/Master'
 import styles from './App.module.scss'
-import Master from './components/Master'
+import Master from './components/Detail'
 
 function App() {
   const [products, setProducts] = useState([

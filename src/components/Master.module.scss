@@ -1,61 +1,25 @@
 @import '../mixins';
-.dv_product_Panel {
+.button {
   @include mixin-flex();
   @include mixin-border();
-  width: 99%;
-}
-.dv_product_name_panel {
-  @include mixin-font-size();
-  @include mixin-font-weight();
-  @include mixin-text-right();
-  margin: 100px auto 40px auto;
-}
-.dv_product_image_panel {
-  width: 100%;
-}
-.dv_content_box {
-    flex-basis: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-  .dv_image_box {
-    flex-basis: 40%;
-  }
-  .dv_product_description {
-    @include mixin-margin();
-    @include mixin-font-size();
-    @include mixin-font-weight();
-    @include mixin-text-right();
-    line-height: 2rem;
-  }
-  .dv_product_stock {
-    @include mixin-margin();
-    @include mixin-font-size();
-    @include mixin-font-weight();
-    width: 100%;
-    color: #ff1749;
-    text-align: center;
-  }
-  .price_box{
-    @include mixin-flex();
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
-    margin: 0px 0px 115px 0px;
+    border-radius: 10px;
+    padding: 10px;
   }
-  .dv_product_price {
+  .button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 2px #d3cece;
+  }
+  .span_name {
     @include mixin-font-size();
     @include mixin-font-weight();
-    @include mixin-text-right();
-    width: 100%;
-    color: #c1c1c1;
-    text-decoration: line-through;
+    text-align: right;
   }
-  .dv_product_discount {
-    @include mixin-font-weight();
-    width: 100%;
-    color: #ff1749;
-    text-align: left;
+  .product_image {
+    @include mixin-border();
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
   }
+  

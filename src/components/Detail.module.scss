@@ -1,24 +1,65 @@
 @import '../mixins';
-.dv_product_button {
+.product_Panel {
   @include mixin-flex();
   @include mixin-border();
-    width: 90%;
-    justify-content: space-between;
-    padding: 10px;
+  width: 99%;
+}
+.dv_product_name_panel {
+  @include mixin-font-size();
+  @include mixin-font-weight();
+  @include mixin-text-right();
+  margin: 100px auto 40px auto;
+}
+.product_img_panel {
+  width: 100%;
+}
+.content {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    box-sizing: border-box;
   }
-  .dv_product_button:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 5px 2px #e1e1e1;
+  .dv_image_box {
+    flex-basis: 40%;
   }
-  .dv_product_name {
+  .description {
+    @include mixin-margin();
     @include mixin-font-size();
     @include mixin-font-weight();
-    text-align: right;
+    @include mixin-text-right();
+    line-height: 2rem;
   }
-  .dv_product_image {
-    @include mixin-border();
-    width: 50px;
-    border-radius: 50%;
-    padding: 5px;
+  .stock {
+    @include mixin-margin();
+    @include mixin-font-size();
+    @include mixin-font-weight();
+    width: 100%;
+    color: #814552;
+    text-align: center;
   }
-  
+  .price_box{
+    @include mixin-flex();
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px 0px 100px 0px;
+  }
+  .price {
+    @include mixin-font-size();
+    @include mixin-font-weight();
+    @include mixin-text-right();
+    width: 100%;
+    color: #d3cdcdc0;
+    text-decoration: line-through;
+  }
+  .discount {
+    @include mixin-font-weight();
+    width: 100%;
+    color: #ff1749;
+    text-align: left;
+  }
+  .counter{
+    @include mixin-font-weight();
+    display: flex;
+  }
